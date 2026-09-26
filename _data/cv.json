@@ -1,152 +1,169 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Junteng Liu",
+    "email": "jliugi@connect.ust.hk",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://riverhe459-lgtm.github.io/LJT-Homepage",
+    "summary": "First-year PhD candidate at HKUST NLP Group, Hong Kong University of Science and Technology. Research focuses on natural language processing and machine learning.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "",
+      "countryCode": "",
       "region": ""
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "Vicent0205",
+        "url": "https://github.com/Vicent0205"
+      },
+      {
+        "network": "X",
+        "username": "junteng88716710",
+        "url": ""
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "MINIMAX",
+      "position": "Research Intern",
+      "startDate": "2025-02",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Tencent WXG",
+      "position": "Research Intern",
+      "startDate": "2024-06",
+      "endDate": "2024-09",
+      "summary": "Advisor: Zifei Shan",
+      "highlights": []
+    },
+    {
+      "company": "Shanghai AI Lab",
+      "position": "Research Intern",
+      "startDate": "2023-06",
+      "endDate": "2023-12",
+      "summary": "Advisor: Prof. Yu Cheng",
+      "highlights": []
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "Hong Kong University of Science and Technology",
+      "area": "Ph.D. in Computer Science",
+      "studyType": "Ph.D.",
+      "startDate": "2024",
+      "endDate": "Present",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "institution": "Shanghai Jiao Tong University",
+      "area": "B.Eng.",
+      "studyType": "B.Eng.",
+      "startDate": "2020",
+      "endDate": "2024",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Natural Language Processing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Machine Learning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "LLM Reasoning and Reinforcement Learning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Hallucination in Vision-Language Models (VLM)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "LLM truthfulness and Interpretability",
+      "level": "",
+      "keywords": []
+    }
+  ],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "LLM Reasoning and Reinforcement Learning",
+      "keywords": []
+    },
+    {
+      "name": "Hallucination in Vision-Language Models (VLM)",
+      "keywords": []
+    },
+    {
+      "name": "LLM truthfulness and Interpretability",
+      "keywords": []
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond",
+      "publisher": "Arxiv",
+      "releaseDate": "2025-01-01",
+      "website": "",
+      "summary": "First author. Junteng Liu, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "On the Perception Bottleneck of VLMs for Chart Understanding",
+      "publisher": "Arxiv",
+      "releaseDate": "2025-01-01",
+      "website": "",
+      "summary": "First author. Junteng Liu, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "On the Universal Truthfulness Hyperplane Inside LLMs",
+      "publisher": "EMNLP 2024",
+      "releaseDate": "2024-01-01",
+      "website": "",
+      "summary": "First author. Junteng Liu, Shiqi Chen, Yu Cheng, Junxian He."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation",
+      "publisher": "ICML 2024",
+      "releaseDate": "2024-01-01",
+      "website": "",
+      "summary": "Shiqi Chen, Miao Xiong, Junteng Liu, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He."
+    },
+    {
+      "name": "C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models",
+      "publisher": "NeurIPS 2023",
+      "releaseDate": "2023-01-01",
+      "website": "",
+      "summary": "Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, Junteng Liu, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He."
+    },
+    {
+      "name": "Composing Parameter-Efficient Modules with Arithmetic Operations",
+      "publisher": "NeurIPS 2023",
+      "releaseDate": "2023-01-01",
+      "website": "",
+      "summary": "Jinghan Zhang, Shiqi Chen, Junteng Liu, Junxian He."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }
