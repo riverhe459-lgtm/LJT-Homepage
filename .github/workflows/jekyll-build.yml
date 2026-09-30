@@ -1,18 +1,23 @@
-name: Jekyll build
+name: Build and deploy homepage
 
 on:
-  # Run after bad-pr check
-  workflow_run:
-    workflows: ["Cleanup bad PR"]
-    branches: [main]
-    types:
-      - completed
-      
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: "Deploy after enabling GitHub Pages with GitHub Actions in repository settings"
+        type: boolean
+        required: false
+        default: false
+
 permissions:
   contents: read
 
 concurrency:
-  group: jekyll-build-${{ github.ref }}
+  group: homepage-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -21,14 +26,38 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
           bundler-cache: true
-
       - name: Build site
-        run: bundle exec jekyll build --strict_front_matter
+        run: bundle exec jekyll build --strict_front_matter --trace
         env:
           JEKYLL_ENV: production
+      - name: Verify page scope, memory-backed publications, and internal links
+        run: bundle exec ruby scripts/verify_site.rb
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    if: >-
+      github.ref == 'refs/heads/master' &&
+      github.event_name != 'pull_request' &&
+      (github.event.repository.has_pages == true || inputs.deploy == true)
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

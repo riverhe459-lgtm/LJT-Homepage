@@ -1,0 +1,13 @@
+{% comment %}One memory-backed list is rendered on both existing pages.{% endcomment %}
+<ol class="publication-list">
+{% for publication in site.data.publications %}
+  <li>
+    <p>
+      <strong>{{ publication.title | escape }}</strong><br>
+      {% for author_name in publication.authors %}{% if author_name == site.author.name %}<strong>{{ author_name | escape }}</strong>{% else %}{{ author_name | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}<br>
+      <em>{{ publication.venue | escape }}</em>, {{ publication.year }}. {{ publication.contribution | escape }}.
+      {% if publication.code_repository %}<br>GitHub code repository: <code>{{ publication.code_repository | escape }}</code>.{% elsif publication.has_github_code %}<br>Code available on GitHub.{% endif %}
+    </p>
+  </li>
+{% endfor %}
+</ol>
